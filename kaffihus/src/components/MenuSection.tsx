@@ -1,0 +1,16 @@
+import type { ReactNode } from "react";
+
+type MenuSectionProps = {
+  title: string;
+  children: ReactNode;
+};
+
+export default function MenuSection({ title, children }: MenuSectionProps) {
+  return (
+    <section>
+      <h2>{title}</h2>
+      <div className="items">{children}</div>
+    </section>
+  );
+}
+

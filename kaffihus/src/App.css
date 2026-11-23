@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #faf3e8;
+  color: #30231d;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header,
+.footer {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 16px;
+}
+
+.menu-item {
+  padding: 16px;
+  background: white;
+  border: 1px solid #decbb9;
+  border-radius: 12px;
+}
+
+.menu-item h3 {
+  margin-top: 0;
+}
+
+.price {
+  font-weight: 700;
+  color: #7a3c18;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #dcefdc;
+  color: #21552c;
+  font-weight: 600;
+}
